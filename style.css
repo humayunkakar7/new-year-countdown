@@ -1,0 +1,70 @@
+@-webkit-keyframes backgroundGradient {
+    0%{background-position:0% 31%}
+    50%{background-position:100% 70%}
+    100%{background-position:0% 31%}
+}
+@-moz-keyframes backgroundGradient {
+    0%{background-position:0% 31%}
+    50%{background-position:100% 70%}
+    100%{background-position:0% 31%}
+}
+@keyframes backgroundGradient { 
+    0%{background-position:0% 31%}
+    50%{background-position:100% 70%}
+    100%{background-position:0% 31%}
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+html, body {
+    background: linear-gradient(311deg, #246655, #2d5c71, #132a0f);
+    background-size: 600% 600%;
+    -webkit-animation: backgroundGradient 15s ease infinite;
+    -moz-animation: backgroundGradient 15s ease infinite;
+    animation: backgroundGradient 15s ease infinite;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    color: #eee;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+#title {
+    font-family: "Pacifico", sans-serif;
+    font-size: 4rem;
+    position: absolute;
+    width: 100vw;
+    height: 100px;
+}
+#container {
+    position: absolute;
+    width: 100vw;
+    height: 300px;
+}
+#countdown {
+    font-size: 2rem;
+}
+#snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+.snowflake {
+    padding-left: 15px;
+    font-family: Cambria, Georgia, serif;
+    font-size: 14px;
+    line-height: 24px;
+    position: fixed;
+    color: #FFFFFF;
+    user-select: none;
+    z-index: 1000;
+}
+.snowflake:hover {
+    cursor: default;
+}

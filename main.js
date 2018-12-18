@@ -77,6 +77,8 @@ function checkDay() {
         setTimeout(checkDay, 1000);
     }
 }
+
+
 var container = document.getElementById('container');
 container.style['margin-top'] = (((document.documentElement.clientHeight) / 2) - (container.offsetHeight / 2)) + 'px';
 container.style['margin-left'] = (((document.documentElement.clientWidth) / 2) - (container.offsetWidth / 2)) + 'px';
